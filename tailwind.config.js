@@ -19,6 +19,15 @@ module.exports = {
       dropShadow: {
         navDropShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
       },
+      keyframes: {
+        shiftLeft: {
+          "0%": { opacity: 0, transform: "translateX(-400px)" },
+          "100%": { opacity: 1, transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        shiftLeft: "shiftLeft 0.4s ease-in-out",
+      },
     },
   },
   variants: {},

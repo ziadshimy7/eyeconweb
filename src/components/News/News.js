@@ -1,15 +1,10 @@
 import React from "react";
 import newsImage from "../../assets/indoor-flowers-photo.png";
 import { GrView } from "react-icons/gr";
+import TitleLinkWrapper from "../../Wrappers/TitleLinkWrapper/TitleLinkWrapper";
 const News = () => {
   return (
     <section>
-      <div className="flex justify-between px-2 mt-8 items-center mb-3">
-        <h2 className="text-gray-900 font-graphik-bold text-lg">News</h2>
-        <a className="font-graphik text-base text-[#2563EB]" href="#">
-          See all
-        </a>
-      </div>
       <div className="flex justify-center flex-1 h-64">
         <img className="px-1 object-fit" src={newsImage} alt="Potted plants" />
       </div>
@@ -31,4 +26,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default TitleLinkWrapper(News, "News", "See all", "#2563EB");

@@ -4,6 +4,7 @@ import pionsPhoto from "../../assets/pions-photo.png";
 import aloePhoto from "../../assets/aloe-photo.png";
 import chrysanthemumPhoto from "../../assets/chrysanthemum-photo.png";
 import ProductCard from "./ProductCard";
+import TitleLinkWrapper from "../../Wrappers/TitleLinkWrapper/TitleLinkWrapper";
 const products = [
   {
     id: 1,
@@ -33,14 +34,6 @@ const products = [
 const PlantsFlowers = () => {
   return (
     <section>
-      <div className="flex justify-between px-2 mt-8 items-center">
-        <h2 className="text-gray-900 font-graphik-bold text-lg font-semibold">
-          Plants and flowers
-        </h2>
-        <a className="font-graphik text-base text-[#6BA91A]" href="#">
-          See all
-        </a>
-      </div>
       <div className="products__container flex flex-wrap mt-2">
         {products.map((product) => {
           return <ProductCard key={product.id} product={product} />;
@@ -50,4 +43,9 @@ const PlantsFlowers = () => {
   );
 };
 
-export default PlantsFlowers;
+export default TitleLinkWrapper(
+  PlantsFlowers,
+  "Plants and flowers",
+  "See all",
+  "#6BA91A"
+);

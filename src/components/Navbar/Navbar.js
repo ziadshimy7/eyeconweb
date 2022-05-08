@@ -29,7 +29,7 @@ const Navbar = () => {
           />
         </div>
       </nav>
-      {toggleNavMenu && <NavbarMenu />}
+      {toggleNavMenu && <NavbarMenu isToggled={toggleNavMenu} />}
     </div>
   );
 };

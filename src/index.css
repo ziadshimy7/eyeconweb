@@ -28,3 +28,13 @@
 body {
   @apply bg-gray-100;
 }
+@keyframes shiftLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

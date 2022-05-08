@@ -1,9 +1,9 @@
 import React from "react";
 import profileImage from "../../assets/test-profile.svg";
 
-const NavbarMenu = () => {
+const NavbarMenu = ({ isToggled }) => {
   return (
-    <div className="absolute h-[370px] bg-gray-900 w-full flex flex-col items-center">
+    <div className="absolute animate-shiftLeft h-[370px]  bg-gray-900 w-full flex flex-col items-center transition-opacity">
       <button className="flex justify-center items-center gap-2 bg-gray-800 py-2 rounded-lg w-[95%]">
         <img src={profileImage} alt="profile" />
         <span className="text-white font-graphik text-sm ">
