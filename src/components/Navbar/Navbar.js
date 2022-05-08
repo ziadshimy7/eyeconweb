@@ -5,7 +5,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 import profileImage from "../../assets/test-profile.svg";
 const Navbar = () => {
   const [toggleNavMenu, setToggleNavMenu] = useState(false);
-  console.log(toggleNavMenu);
   const onNavClickHandler = () => {
     setToggleNavMenu((prevState) => !prevState);
   };
