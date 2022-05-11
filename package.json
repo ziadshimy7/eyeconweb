@@ -27,7 +27,6 @@
   },
   "name": "tailwind",
   "version": "1.0.0",
-  "main": "babel.config.js",
   "scripts": {
     "start": "webpack serve --open",
     "build": "NODE_ENV=production webpack --config webpack.prod.js"
