@@ -26,4 +26,4 @@ const News = () => {
   );
 };
 
-export default TitleLinkWrapper(News, "News", "See all", "text-[#2563EB]");
+export default TitleLinkWrapper(News, "News", "See all", "text-blue-500");
