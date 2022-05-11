@@ -35,4 +35,9 @@ const PlantCare = () => {
     </section>
   );
 };
-export default TitleLinkWrapper(PlantCare, "Plant Care", "See all", "#6BA91A");
+export default TitleLinkWrapper(
+  PlantCare,
+  "Plant Care",
+  "See all",
+  "text-[#6BA91A]"
+);

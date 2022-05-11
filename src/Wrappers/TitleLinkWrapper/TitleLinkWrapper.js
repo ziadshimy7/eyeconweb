@@ -8,12 +8,7 @@ const TitleLinkWrapper = (Component, titleName, linkName, linkColor) =>
           <h2 className="text-gray-900 font-graphik-bold text-lg">
             {titleName}
           </h2>
-          <a
-            className={`font-graphik-medium text-base ${
-              linkColor ? `text-[${linkColor}]` : "text-blue-500"
-            } `}
-            href="#"
-          >
+          <a className={`font-graphik-medium text-base ${linkColor}`} href="#">
             {linkName}
           </a>
         </div>

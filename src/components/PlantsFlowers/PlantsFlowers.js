@@ -47,5 +47,5 @@ export default TitleLinkWrapper(
   PlantsFlowers,
   "Plants and flowers",
   "See all",
-  "#6BA91A"
+  "text-[#6BA91A]"
 );
